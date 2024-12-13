@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/Pabeks/Hosting-a-Static-Website-on-a-Docker-Container'
+                git branch: 'main', url: 'https://github.com/Pabeks/Hosting-a-Static-Website-on-a-Docker-Container'
+
             }
         }
         stage('Build Docker Image') {
