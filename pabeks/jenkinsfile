@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image using the Dockerfile in the repo
-                    sh 'docker build -t pabeks/static-website .'
+                    sh 'docker build -t pabeks/Dockerfile .'
                 }
             }
         }
